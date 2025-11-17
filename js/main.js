@@ -1,8 +1,11 @@
 // Recuperar carrito desde localStorage o iniciar vacío
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-// Elemento del carrito en el offcanvas
-const listaCarrito = document.getElementById("list-group");
+// Elemento correcto del carrito en el offcanvas
+const listaCarrito = document.getElementById("lista-carrito");
+
+// Buscar todos los botones "Agregar al carrito"
+const botones = document.querySelectorAll(".card .btn-primary");
 
 // Función para renderizar el carrito en pantalla
 function renderCarrito() {
@@ -10,7 +13,7 @@ function renderCarrito() {
 
     carrito.forEach((producto, index) => {
         const li = document.createElement("li");
-        li.classList = "list-group-item";
+        li.classList = "list-group-item d-flex justify-content-between align-items-center";
         li.innerHTML = `
             ${producto}
             <button class="btn btn-sm btn-danger" onclick="eliminarProducto(${index})">X</button>
@@ -30,9 +33,6 @@ function eliminarProducto(index) {
     guardarLocalStorage();
     renderCarrito();
 }
-
-// Buscar todos los botones "Agregar al carrito"
-const botones = document.querySelectorAll(".card .btn-primary");
 
 // Asignar función a cada botón
 botones.forEach(boton => {

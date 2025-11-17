@@ -102,7 +102,7 @@
     }
 
     .service {
-      background: #f3dad7; /*f5ada4*/
+      background: #f3dad7;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -110,10 +110,8 @@
     }
 
     footer {
-      margin-top: 40px;
       background: #6e0e01;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       color: white;
-
     }
