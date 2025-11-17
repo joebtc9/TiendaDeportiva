@@ -8,175 +8,209 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Combate Store</h1>
+        <h1>Knockout Gear</h1>
         <p>Los mejores productos para tu rendimiento</p>
     </header>
 
     <nav>
-        <a href="#productos">Productos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+        <button class="btn btn-light" onclick="location.href='#productos'">Productos</button>
+        <button class="btn btn-light" onclick="location.href='#servicios'">Servicios</button>
+        <button class="btn btn-light" onclick="location.href='#contacto'">Contacto</button>
+        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Carrito</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <section class="hero">
         <h1>La mejor ropa y equipo para deportes de contacto</h1>
     </section>
-                                         <!-- Tarjeta de Ropa deportiva-->
 
+    <!-- Productos destacados -->
     <h2 id="productos" class="section-title">Productos Destacados</h2>
     <div class="container" id="container-cards">
         <div class="row">
             <div class="card mx-auto" style="width: 18rem;">
-                <div id="carouselExampleFade01" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/RopaDeportiva.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/Camisa-KB.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/Short-gris-Box.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade01"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade01"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                <img src="assets/Camisa-KB.png" alt="Camisa Destacada">
                 <div class="card-body">
-                    <h3>Ropa deportiva</h3>
+                    <h3>Camisa mamalona</h3>
                     <p class="card-text">Diseñados para máximo comfort y rendimiento.</p>
+                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
                 </div>
             </div>
-
-            <!-- Tarjeta de Accesorios-->
 
             <div class="card mx-auto" style="width: 18rem;">
-                <div id="carouselExampleFade02" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/BucalesDeportivo.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/Manoplas-Box.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/material-kick-boxing.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade02"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade02"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                <img src="assets/Guantes-KB.png" alt="Guantes Destacada">
                 <div class="card-body">
-                    <h3>Accesorios</h3>
-                    <p class="card-text">Excelente protección y durabilidad para tus entrenamientos.</p>
+                    <h3>Guantes mamalones</h3>
+                    <p class="card-text">Diseñados para máximo comfort y rendimiento.</p>
+                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
                 </div>
             </div>
-
-            <!-- Tarjeta de equipo profesional-->
 
             <div class="card mx-auto" style="width: 18rem;">
+                <img src="assets/Saco-de-box-3.png" alt="Guantes Destacada">
+                <div class="card-body">
+                    <h3>Costal mamalón</h3>
+                    <p class="card-text">Diseñados para máximo comfort y rendimiento.</p>
+                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                </div>
+            </div>
 
-                <div id="carouselExampleFade03" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/Saco-de-box-3.png" class="d-block w-100" alt="...">
+
+            <h2 id="productos" class="section-title">Categorías</h2>
+
+            <!-- Tarjeta de Ropa deportiva-->
+            <div class="container" id="container-cards">
+                <div class="row">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <div id="carouselExampleFade01" class="carousel slide carousel-fade">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/RopaDeportiva.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/Camisa-KB.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/Short-gris-Box.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade01"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade01"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/Pera-Box.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/Cintas-Karate.jpg" class="d-block w-100" alt="...">
+                        <div class="card-body">
+                            <h3>Ropa deportiva</h3>
+                            <p class="card-text">Diseñados para máximo comfort y rendimiento.</p>
+
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade03"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade03"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+
+                    <!-- Tarjeta de Accesorios-->
+
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <div id="carouselExampleFade02" class="carousel slide carousel-fade">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/BucalesDeportivo.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/Manoplas-Box.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/material-kick-boxing.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade02"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade02"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h3>Accesorios</h3>
+                            <p class="card-text">Excelente protección y durabilidad para tus entrenamientos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de equipo profesional-->
+
+                    <div class="card mx-auto" style="width: 18rem;">
+
+                        <div id="carouselExampleFade03" class="carousel slide carousel-fade">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/Saco-de-box-3.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/Pera-Box.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/Cintas-Karate.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade03"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade03"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="card-body">
+                            <h3>Equipo profesional</h3>
+                            <p class="card-text">Balón oficial ideal para partidos y entrenamientos.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="card-body">
-                    <h3>Equipo profesional</h3>
-                    <p class="card-text">Balón oficial ideal para partidos y entrenamientos.</p>
+            <!-- Sección de servicios -->
+            <h2 id="servicios" class="section-title">Nuestros Servicios</h2>
+            <section class="services">
+                <div class="services-list">
+                    <div class="service">
+                        <h3>Asesoría Deportiva</h3>
+                        <p>Te ayudamos a elegir el equipo ideal para tu disciplina.</p>
+                    </div>
+
+                    <div class="service">
+                        <h3>Entrenamientos Personalizados</h3>
+                        <p>Planes adaptados a tus objetivos deportivos.</p>
+                    </div>
+
+                    <div class="service">
+                        <h3>Instalación de Equipos</h3>
+                        <p>Montaje profesional de equipos deportivos para gimnasios o casas.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
 
-    <!--<section class="products">
-        <div class="product-card">
-            <img src="./assets/RopaDeportiva.png" alt="Tenis deportivos" />
-            <h3>Ropa deportiva</h3>
-            <p>Diseñados para máximo confort y rendimiento.</p>
-        </div>
+            <footer id="contacto">
 
-        <div class="product-card">
-            <img src="./assets/BucalesDeportivo.png" alt="Guantes de box" />
-            <h3>Accesorios</h3>
-            <p>Excelente protección y durabilidad para tus entrenamientos.</p>
-        </div>
-
-        <div class="product-card">
-            <img src="./assets/material-kick-boxing.png" alt="Balón de fútbol" />
-            <h3>Equipo profesional</h3>
-            <p>Balón oficial ideal para partidos y entrenamientos.</p>
-        </div>
-    </section>
--->
-    <h2 id="servicios" class="section-title">Nuestros Servicios</h2>
-    <section class="services">
-        <div class="services-list">
-            <div class="service">
-                <h3>Asesoría Deportiva</h3>
-                <p>Te ayudamos a elegir el equipo ideal para tu disciplina.</p>
-            </div>
-
-            <div class="service">
-                <h3>Entrenamientos Personalizados</h3>
-                <p>Planes adaptados a tus objetivos deportivos.</p>
-            </div>
-
-            <div class="service">
-                <h3>Instalación de Equipos</h3>
-                <p>Montaje profesional de equipos deportivos para gimnasios o casas.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contacto">
-
-        <p>© 2025 Combate Store — Todos los derechos reservados.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+                <p>© 2025 Knockout Gear — Todos los derechos reservados.</p>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+            <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -18,9 +18,11 @@
     }
 
     nav {
+      position: sticky;
       background: #8d2b1e; 
       padding: 5px;
       text-align: center;
+
     }
 
     nav a {
@@ -60,8 +62,8 @@
       width: 90%;
       margin: auto;
     }
-
-    .product-card {
+    
+    .card-body {
       background: white;
       border-radius: 10px;
       padding: 15px;
@@ -113,4 +115,5 @@
       text-align: center;
       padding: 20px;
       color: white;
+
     }
