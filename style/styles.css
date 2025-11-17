@@ -109,9 +109,20 @@
       text-align: center;
     }
 
+    form{
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .mb-3{
+      text-align: center;
+      width: 600px;
+    }
+
     footer {
       background: #6e0e01;
       text-align: center;
-      padding: 15px;
+      padding: 10px;
       color: white;
     }
